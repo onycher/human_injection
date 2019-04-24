@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <!-- Bootstrap CSS -->
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link href="static/hi.css" rel="stylesheet">
+    <title>Human Injection</title>
+</head>
+<body>
+<div class="container">
+    <div class="row mt-2">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="test-suites">Suite</label>
+            </div>
+            <select class="custom-select" id="test-suites"></select>
+            <div class="input-group-append">
+                <button class="btn btn-primary" id="toggle-test-suite">Start</button>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-2 hidden" id="test-cases-row">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="test-cases">Test</label>
+            </div>
+            <select class="custom-select" id="test-cases"></select>
+        </div>
+    </div>
+    <div class="row mt-2 hidden" id="strings-row">
+        <table class="table table-hover table-reflow fixed" id="string-table"></table>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-RtMTraB5gGlLER0FkKBcaXCmZCQCxkKS/dXm7MSEoEY="
+        src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.slim.js"></script>
+<script src="static/hi.js"></script>
+</body>
+</html>

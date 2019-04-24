@@ -1,0 +1,15 @@
+.hidden {
+    display: none;
+}
+
+.fixed {
+    table-layout: fixed;
+}
+
+.min-content {
+    width: min-content;
+}
+
+.auto {
+    width: auto;
+}
