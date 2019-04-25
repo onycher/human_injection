@@ -29,7 +29,7 @@ class Plugins(dict):
 
 plugins = Plugins()
 
-with open('static/blns.json') as f:
+with open('static/blns.json', encoding='utf-8') as f:
     strings = json.load(f)
 
 
